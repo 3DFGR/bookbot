@@ -28,7 +28,7 @@ def count_chars(text: str) -> dict:
     return result
 
 
-def sasha_molodets(path):
+def get_book_stats(path):
     text = get_book_text(path)
     words = count_words(text)
     chars = sorted_chars(count_chars(text))
@@ -44,8 +44,9 @@ def sasha_molodets(path):
 
 def main():
     book_path = "books/frankenstein.txt"
-    sasha_molodets(book_path)
+    get_book_stats(book_path)
 
 
 if __name__ == "__main__":
     main()
+
